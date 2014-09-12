@@ -1,0 +1,179 @@
+﻿
+html {
+    font-size: 75%;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    font-family: arial, helvetica, sans-serif;
+    color: #777;
+    text-align: center;
+    font-size: 1.0833em;
+    line-height: 1.6923em;
+}
+
+a {
+    color: #09F;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+p {
+    margin: 0 0 1.6923em 0;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+#header,
+#content,
+#footer {
+    text-align: left;
+    /*width: 870px;*/
+    margin: 0 auto;
+    padding: 40px;
+}
+
+#header,
+#footer {
+    background-color: #eee;
+}
+
+    #header h1 {
+        margin: 0;
+    }
+
+    #header p {
+        margin: 5px 0 0;
+    }
+
+#content {
+    background-color: #fff;
+}
+
+/* ---------------------------------------------------------- */
+/* LIGHTBOXES
+    /* ---------------------------------------------------------- */
+
+#lightboxes {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+    overflow: hidden;
+}
+
+    #lightboxes li {
+        width: 100%;
+        height: 9999px;
+        position: relative;
+        background: rgba(0,0,0,.5);
+    }
+
+    #lightboxes .box {
+        position: absolute;
+        width: 299px;
+        height: 124px;
+        left: 50%;
+        top: 50px;
+        border: 2px solid #999;
+        margin-left: -150px;
+        background-color: #fff;
+        /*text-align:center;*/
+    }
+
+    #lightboxes .box .box-header {
+        background-color:#808080;
+        height:32px;
+        border-bottom:1px solid #dddddd;
+        /*text-align:left;*/
+    }
+
+    #lightboxes h3 {
+        color:#dddddd;
+        font-weight: normal;
+        font-size: 17px;
+        padding:5px 0 5px 8px;
+        margin:0px;
+        width:68px;
+    }
+
+    #lightboxes a.close {
+        position: absolute;
+        top: 4px;
+        right: 6px;
+        display: block;
+        width: 23px;
+        height:22px;
+        background-color: #ddd;
+        border-radius: 15px;
+        background: url('../images/delete.png') no-repeat;
+    }
+
+  
+        #lightboxes a.close:hover {
+            background-color: #999;
+            color: #fff;
+        }
+
+    #lightboxes #close {
+        background-color: transparent;
+        z-index: -1;
+    }
+
+
+
+
+#progressbar {
+  background-color: white;
+  border:1px solid #eee;
+  /*padding: 3px;*/
+  width: 151px;
+  height:14px;
+  margin:20px auto 20px auto;
+}
+
+    #progressbar > div {
+        width: 40%; /* Adjust with JavaScript */
+        height: 14px;
+        background: rgba(127,202,255,1);
+        background: -moz-linear-gradient(top, rgba(127,202,255,1) 0%, rgba(103,164,208,1) 50%, rgba(103,164,208,1) 50%, rgba(103,164,208,1) 55%, rgba(80,127,161,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(127,202,255,1)), color-stop(50%, rgba(103,164,208,1)), color-stop(50%, rgba(103,164,208,1)), color-stop(55%, rgba(103,164,208,1)), color-stop(100%, rgba(80,127,161,1)));
+        background: -webkit-linear-gradient(top, rgba(127,202,255,1) 0%, rgba(103,164,208,1) 50%, rgba(103,164,208,1) 50%, rgba(103,164,208,1) 55%, rgba(80,127,161,1) 100%);
+        background: -o-linear-gradient(top, rgba(127,202,255,1) 0%, rgba(103,164,208,1) 50%, rgba(103,164,208,1) 50%, rgba(103,164,208,1) 55%, rgba(80,127,161,1) 100%);
+        background: -ms-linear-gradient(top, rgba(127,202,255,1) 0%, rgba(103,164,208,1) 50%, rgba(103,164,208,1) 50%, rgba(103,164,208,1) 55%, rgba(80,127,161,1) 100%);
+        background: linear-gradient(to bottom, rgba(127,202,255,1) 0%, rgba(103,164,208,1) 50%, rgba(103,164,208,1) 50%, rgba(103,164,208,1) 55%, rgba(80,127,161,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7fcaff', endColorstr='#507fa1', GradientType=0 );
+    }
+
+#progressbar > div.finished {
+   background-color: green;
+}
+
+.box-message-wrapper {
+    font-size:17px;
+    text-align:center;
+    width:100%;
+    color:#808080;
+}
+
+.box-message-completed {
+    display:none;
+}
