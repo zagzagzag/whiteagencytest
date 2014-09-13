@@ -31,15 +31,20 @@
         </header>
         <section id="content">
             <h2>Light box using any JavaScript</h2>
+
             <p>
-                <a href="#lightbox-about">Reset the light box</a>
+                <button class="lightbox-controller" data-lightbox-id="lightbox-loading" data-lightbox-action="open">Reset the light box</button>
             </p>
+
+            <!--<p>
+                <a href="#lightbox-loading">Reset the light box</a>
+            </p>-->
         </section>
     </div>
 
     <ul id="lightboxes">
         <li id="close"></li>
-        <li id="lightbox-about">
+        <li id="lightbox-loading">
             <div class="box">
                 <div class="box-header">
                     <h3>Progress</h3>
@@ -65,7 +70,8 @@
             <![endif]-->
         </li>
     </ul>
-
-    <script src="js/lightbox.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.lightbox.js"></script>
+    <script src="js/assignment.js"></script>
 </body>
 </html>
