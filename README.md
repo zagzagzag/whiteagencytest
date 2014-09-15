@@ -7,6 +7,7 @@ Test url:
 http://www.bastien.com.au/dev/whiteagency/
 
 Tested devices:
+
 android_Amazon-Kindle-Fire-2_4.0_portrait 	
 android_HTC-One-X_4.0_portrait 	
 android_LG-Nexus-4_4.2_portrait 	
