@@ -24,7 +24,7 @@ win8_ie_10.0_Desktop
 winxp_chrome_25.0 	
 winxp_ie_7.0 
 
-Check all test screenshotsin the folder 'screenshots'.
+Check all test screenshots in the folder 'screenshots'.
 
 
 Example ie 8 - Window 7 :
