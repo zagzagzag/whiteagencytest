@@ -1,5 +1,4 @@
-﻿
-/*!
+﻿/*!
  * jQuery Lightbox plugin
  * Requires jQuery v1.5 or later
  * Author: Bastien Cabirou
@@ -24,7 +23,7 @@
         $('#lightbox-loading .box').css('top', lightboxTop);
     }
 
-    $(window).bind('orientationchange', function (e) {
+    $(window).bind('orientationchange', function () {
         setTimeout(function () { // hack android
             centerLightbox();
         }, 200);
@@ -32,10 +31,9 @@
 
     var resizeTimer;
     $(window).resize(function () {
-        // For the sake of UI responsiveness we use a timeout
+        // For UI responsiveness we use a timeout
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(centerLightbox, 100);
     });
 
 }(jQuery, window));
-

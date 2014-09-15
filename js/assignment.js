@@ -51,4 +51,3 @@
     };
 
 }(jQuery, window.whiteAgency = window.whiteAgency || {}));
-
