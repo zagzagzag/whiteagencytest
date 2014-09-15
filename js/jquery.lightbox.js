@@ -7,32 +7,35 @@
 
 (function ($, window) {
 
-    //$.Lightbox = function (elements, options) {
-    //    var Lightbox = this;
-        
-    //    Lightbox.init = function () {
-    //        console.log('init');
-    //        var _this = this;
-    //        $('lightbox-controller').click(function () {
-    //            _this.Lightbox($(this).attr('lightbox-action'), $(this.attr('lightbox-id')));
-    //        });
-    //    };
-
-    //    Lightbox.init();
-    //};
-
-    $.fn.Lightbox = function (action, source) {
-        if ( action === "open") {
-            var screenHeight = $(window).height();
-            var lightboxHeight = $('#lightbox-loading .box').height();
-            $('#lightbox-loading .box').css('top', (screenHeight / 2) - (lightboxHeight / 2));
+    $.Lightbox = function (action) {
+        if (action === "open") {
+            centerLightbox();
             $('#lightbox-loading').show();
         }
- 
-        if ( action === "close" ) {
+
+        if (action === "close") {
             $('#lightbox-loading').hide();
         }
 
     };
 
+    function centerLightbox() {
+        var lightboxTop = ($(window).height() / 2) - ($('#lightbox-loading .box').height() / 2);
+        $('#lightbox-loading .box').css('top', lightboxTop);
+    }
+
+    $(window).bind('orientationchange', function (e) {
+        setTimeout(function () { // hack android
+            centerLightbox();
+        }, 200);
+    });
+
+    var resizeTimer;
+    $(window).resize(function () {
+        // For the sake of UI responsiveness we use a timeout
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(centerLightbox, 100);
+    });
+
 }(jQuery, window));
+
