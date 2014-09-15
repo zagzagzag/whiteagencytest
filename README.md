@@ -3,7 +3,7 @@ WA test
 
 Front-end assignment
 
-Test url: 
+Demo url: 
 http://www.bastien.com.au/dev/whiteagency/
 
 Tested devices:
