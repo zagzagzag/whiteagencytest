@@ -27,5 +27,6 @@ winxp_ie_7.0
 Check all test screenshotsin the folder 'screenshots'.
 
 
-Ex: 
+Example ie 8 - Window 7 :
+
 ![alt tag](https://raw.github.com/zagzagzag/whiteagencytest/master/screenshots/win7_ie_8.0.png)
